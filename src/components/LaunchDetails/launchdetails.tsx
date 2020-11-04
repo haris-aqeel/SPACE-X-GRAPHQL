@@ -30,11 +30,13 @@ const LaunchDetails: React.FC<Props> = ({ data }) => {
             ` (${data.launch.rocket.rocket_name} | ${data.launch.rocket.rocket_type})`}
         </h1>
         <p className={`${className}__description`}>{data.launch.details}</p>
-        <video src="youtu.be/MLeIBFYY6UY" controls={true}></video>
+        <video controls={true}>
+        <source src="www.youtube.com/watch?v=3bGNuRtlqAQ" type="video/mp4" />
+      </video>
         {!!data.launch.links && !!data.launch.links.flickr_images && (
           <div className={`${className}__image-list`}>
             {data.launch.links.flickr_images.map(image =>
-              image ? <img src={image} className={`${className}__image`} key={image} /> : null,
+              image ? <img src={image} alt='SPACEX' className={`${className}__image`} key={image} /> : null,
             )}
           </div>
         )}
