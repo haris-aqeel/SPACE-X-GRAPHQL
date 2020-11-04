@@ -1,0 +1,30 @@
+.launch{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.launch_success:hover{
+    border: 1px solid green!important;
+    cursor: pointer;
+}
+
+.launch_failed:hover{
+    border: 1px solid red!important;
+    cursor: pointer;
+}
+
+.launchess{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+.launches h1{
+    text-align: center;
+    margin: 50px 0px
+    
+}
